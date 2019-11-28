@@ -1,0 +1,17 @@
+/*
+===================================================
+This file is a build artifact, do not edit directly
+===================================================
+*/
+
+<% for(var i=0; i < modules.length; i++) { %>
+import <%=modules[i].name%> from '../src/controllers/<%=modules[i].name%>.controller';
+<% } %>
+
+const modules: any = {
+<% for(var i=0; i < modules.length; i++) { %>
+    <%=modules[i].name%>: <%=modules[i].name%>,
+<% } %>
+};
+
+export default modules;

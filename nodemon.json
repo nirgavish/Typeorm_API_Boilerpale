@@ -1,0 +1,12 @@
+{
+    "restartable": "rs",
+    "ignore": [
+      "./_artifacts",
+      "node_modules/**/node_modules"
+    ],
+    "verbose": true,
+    "watch": [
+      "src/"
+    ],
+    "ext": "ts,js,json"
+  }
